@@ -1,0 +1,111 @@
+/* ตั้งค่าพื้นฐานและฟอนต์ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* หัวข้อ */
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+/* พื้นที่ช่องกรอกข้อมูล */
+#inputArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.subject {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.subject:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* ปุ่มกด (add และ submit) */
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-right: 8px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* ปุ่ม Add (ปุ่มแรก) */
+button:first-of-type {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+button:first-of-type:hover {
+    background-color: #cbd5e1;
+}
+
+/* ปุ่ม Submit (ปุ่มที่สอง) */
+button:last-of-type {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+button:last-of-type:hover {
+    background-color: #2563eb;
+}
+
+/* เส้นคั่น */
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 25px 0;
+}
+
+/* รายการผลลัพธ์ */
+#result {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#result li {
+    background-color: #f8fafc;
+    padding: 10px 14px;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
