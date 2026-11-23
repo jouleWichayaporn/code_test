@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+
+<body>
+    <h1>joule</h1>
+    <div>
+        <img src="/img/1.jpg" width="150" height="150">
+        <!-- /img/1.jpg -->
+        <!-- /=เข้าโฟเดอร์ + ชื่อไฟล์รูป -->
+        <h3>register</h3>
+    </div>
+
+    <form action="" method="get">
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" name="fullname" id="fullname">
+
+        <label>username</label>
+        <input type="text" name="username" id="username">
+
+        <label>date</label>
+        <input type="date" name="date" id="date">
+
+        <label>password</label>
+        <input type="password" name="password" id="password">
+
+        <label>confirm password</label>
+        <input type="password" name="conpass" id="conpass">
+
+        <label>Email</label>
+        <input type="email" name="email" id="email">
+
+        <label>เพศ</label>
+        <select name="gender">
+            <option value="">เลือกเพศของท่าน</option>
+            <option value="เพศหญิง">เพศหญิง</option>
+            <option value="เพศชาย">เพศชาย</option>
+        </select>
+
+        <button type="reset">reset</button>
+        <button type="button" onclick="CheckPassword()">register</button>
+    </form>
+    <script src="/JavaScript/javascript.js"></script>
+</body>
+
+</html>
